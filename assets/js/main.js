@@ -14,5 +14,9 @@ let favColour = prompt('Qual è il tuo colore preferito?');
 console.log(favColour);
 
 /* dichiaro la variabile password dove inserisco i dati appena forniti dall'utente */
-let password = (firstName + lastName + favColour + '23' )
+let password = (`${firstName}${lastName}${favColour}23`)
 console.log(password);
+
+/* dichiaro la variabile finalPass per far apparire la password a schermo */
+const finalPass = document.getElementById('result');
+finalPass.innerHTML = password;
